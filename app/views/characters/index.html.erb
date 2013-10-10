@@ -3,9 +3,10 @@
 <table>
   <thead>
     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
-      <th >Name</th>
+      <th>Name</th>
+      <th>Level</th>
       <th></th>
-      <th></th>
+      <th>Action</th>
       <th></th>
     </tr>
   </thead>
@@ -13,10 +14,11 @@
   <tbody>
     <% @characters.each do |character| %>
       <tr>
-        <td class = "name"><%= character.name %></td>
-        <td><%= link_to 'Show', character %></td>
-        <td><%= link_to 'Edit', edit_character_path(character) %></td>
-        <td><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class = "name-text"><%= character.name %></td>
+        <td class = "level-text"><%= character.level %> </td>
+        <td class = "action-text"><%= link_to 'Show', character %></td>
+        <td class = "action-text"><%= link_to 'Edit', edit_character_path(character) %></td>
+        <td class = "action-text"><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

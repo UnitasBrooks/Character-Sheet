@@ -1,7 +1,7 @@
 // Place all the styles related to the characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.character {
+.characters {
   table {
     border-collapse: collapse;
   }
@@ -34,13 +34,22 @@
     }
   }
   
-  .name {
-  	font-size: 250%;
+  .name-text {
+  	text-align: center;
   }
 
-  #test {
+  .level-text {
+  	text-align: center;
+  }
+
+  .action-text {
+  	text-align: center;
+  }
+
+  .test {
   	position: absolute;
   	top: 1000px;
+  	left: 1000px
   }
 
   .list_actions {
