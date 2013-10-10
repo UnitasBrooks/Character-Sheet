@@ -1,0 +1,109 @@
+<%= form_for(@character) do |f| %>
+  <% if @character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+      <% @character.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.number_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :dexterity %><br>
+    <%= f.number_field :dexterity %>
+  </div>
+  <div class="field">
+    <%= f.label :constitution %><br>
+    <%= f.number_field :constitution %>
+  </div>
+  <div class="field">
+    <%= f.label :wisdom %><br>
+    <%= f.number_field :wisdom %>
+  </div>
+  <div class="field">
+    <%= f.label :intelligence %><br>
+    <%= f.number_field :intelligence %>
+  </div>
+  <div class="field">
+    <%= f.label :charisma %><br>
+    <%= f.number_field :charisma %>
+  </div>
+  <div class="field">
+    <%= f.label :hit_points %><br>
+    <%= f.number_field :hit_points %>
+  </div>
+  <div class="field">
+    <%= f.label :armor_class %><br>
+    <%= f.number_field :armor_class %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br>
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :proficiencies_one %><br>
+    <%= f.text_field :proficiencies_one %>
+  </div>
+  <div class="field">
+    <%= f.label :proficiences_two %><br>
+    <%= f.text_field :proficiences_two %>
+  </div>
+  <div class="field">
+    <%= f.label :proficiencies_three %><br>
+    <%= f.text_field :proficiencies_three %>
+  </div>
+  <div class="field">
+    <%= f.label :proficiencies_four %><br>
+    <%= f.text_field :proficiencies_four %>
+  </div>
+  <div class="field">
+    <%= f.label :proficiencies_five %><br>
+    <%= f.text_field :proficiencies_five %>
+  </div>
+  <div class="field">
+    <%= f.label :feat_one %><br>
+    <%= f.text_field :feat_one %>
+  </div>
+  <div class="field">
+    <%= f.label :feat_two %><br>
+    <%= f.text_field :feat_two %>
+  </div>
+  <div class="field">
+    <%= f.label :feat_three %><br>
+    <%= f.text_field :feat_three %>
+  </div>
+  <div class="field">
+    <%= f.label :feat_four %><br>
+    <%= f.text_field :feat_four %>
+  </div>
+  <div class="field">
+    <%= f.label :feat_five %><br>
+    <%= f.text_field :feat_five %>
+  </div>
+  <div class="field">
+    <%= f.label :initiative %><br>
+    <%= f.number_field :initiative %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br>
+    <%= f.number_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :biography %><br>
+    <%= f.text_area :biography %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

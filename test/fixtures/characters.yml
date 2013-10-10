@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  wisdom: 1
+  intelligence: 1
+  charisma: 1
+  hit_points: 1
+  armor_class: 1
+  name: MyString
+  level: 1
+  proficiencies_one: MyString
+  proficiences_two: MyString
+  proficiencies_three: MyString
+  proficiencies_four: MyString
+  proficiencies_five: MyString
+  feat_one: MyString
+  feat_two: MyString
+  feat_three: MyString
+  feat_four: MyString
+  feat_five: MyString
+  initiative: 1
+  speed: 1
+
+two:
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  wisdom: 1
+  intelligence: 1
+  charisma: 1
+  hit_points: 1
+  armor_class: 1
+  name: MyString
+  level: 1
+  proficiencies_one: MyString
+  proficiences_two: MyString
+  proficiencies_three: MyString
+  proficiencies_four: MyString
+  proficiencies_five: MyString
+  feat_one: MyString
+  feat_two: MyString
+  feat_three: MyString
+  feat_four: MyString
+  feat_five: MyString
+  initiative: 1
+  speed: 1

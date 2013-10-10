@@ -1,0 +1,31 @@
+<h1>Listing weapons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Dice num</th>
+      <th>Dice sides</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weapons.each do |weapon| %>
+      <tr>
+        <td><%= weapon.name %></td>
+        <td><%= weapon.dice_num %></td>
+        <td><%= weapon.dice_sides %></td>
+        <td><%= link_to 'Show', weapon %></td>
+        <td><%= link_to 'Edit', edit_weapon_path(weapon) %></td>
+        <td><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Weapon', new_weapon_path %>
