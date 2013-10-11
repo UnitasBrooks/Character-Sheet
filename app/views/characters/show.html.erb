@@ -1,114 +1,148 @@
+
 <p id="notice"><%= notice %></p>
+<div class = "content-box">
 
-<p>
-  <strong>Strength:</strong>
-  <%= @character.strength %>
-</p>
+  <div class = "name-box">
+    <p class = "name-show-text">
+      <strong>Name:</strong>
+      <%= @character.name %>
+    </p>
+  </div>
 
-<p>
-  <strong>Dexterity:</strong>
-  <%= @character.dexterity %>
-</p>
+  </br>
+  </br>
 
-<p>
-  <strong>Constitution:</strong>
-  <%= @character.constitution %>
-</p>
+  <div class = "stat-box">
+    
+      
+    
+    <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/str.png" />
+      <div class = "stat-show-text">
+        <strong>Strength:</strong>
+        <%= @character.strength %>
+      </div>
+    </div>
 
-<p>
-  <strong>Wisdom:</strong>
-  <%= @character.wisdom %>
-</p>
+    <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/dex.png" />
+      <div class = "stat-show-text">
+        <strong>Dexterity:</strong>
+        <%= @character.dexterity %>
+      </div>
+    </div>
 
-<p>
-  <strong>Intelligence:</strong>
-  <%= @character.intelligence %>
-</p>
+    <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/con.png" />
+      <div class = "stat-show-text">
+        <strong>Constituion:</strong>
+        <%= @character.constitution %>
+      </div>
+    </div>
 
-<p>
-  <strong>Charisma:</strong>
-  <%= @character.charisma %>
-</p>
+  <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/wis.png" />
+      <div class = "stat-show-text">
+        <strong>Wisdom:</strong>
+        <%= @character.wisdom %>
+      </div>
+  </div>
 
-<p>
-  <strong>Hit points:</strong>
-  <%= @character.hit_points %>
-</p>
+  <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/int.png" />
+      <div class = "stat-show-text">
+        <strong>Intelligence:</strong>
+        <%= @character.intelligence %>
+      </div>
+  </div>
 
-<p>
-  <strong>Armor class:</strong>
-  <%= @character.armor_class %>
-</p>
+  <div class = "stat-holder">
+      <img class = "stat-icon" src="/stats/cha.png" />
+      <div class = "stat-show-text">
+        <strong>Charisma:</strong>
+        <%= @character.charisma %>
+      </div>
+  </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @character.name %>
-</p>
+</div>
 
-<p>
-  <strong>Level:</strong>
-  <%= @character.level %>
-</p>
+  <p>
+    <strong>Hit points:</strong>
+    <%= @character.hit_points %>
+  </p>
 
-<p>
-  <strong>Proficiencies one:</strong>
-  <%= @character.proficiencies_one %>
-</p>
+  <p>
+    <strong>Armor class:</strong>
+    <%= @character.armor_class %>
+  </p>
 
-<p>
-  <strong>Proficiences two:</strong>
-  <%= @character.proficiences_two %>
-</p>
+  
 
-<p>
-  <strong>Proficiencies three:</strong>
-  <%= @character.proficiencies_three %>
-</p>
+  <p>
+    <strong>Level:</strong>
+    <%= @character.level %>
+  </p>
 
-<p>
-  <strong>Proficiencies four:</strong>
-  <%= @character.proficiencies_four %>
-</p>
+  <p>
+    <strong>Proficiencies one:</strong>
+    <%= @character.proficiencies_one %>
+  </p>
 
-<p>
-  <strong>Proficiencies five:</strong>
-  <%= @character.proficiencies_five %>
-</p>
+  <p>
+    <strong>Proficiences two:</strong>
+    <%= @character.proficiences_two %>
+  </p>
 
-<p>
-  <strong>Feat one:</strong>
-  <%= @character.feat_one %>
-</p>
+  <p>
+    <strong>Proficiencies three:</strong>
+    <%= @character.proficiencies_three %>
+  </p>
 
-<p>
-  <strong>Feat two:</strong>
-  <%= @character.feat_two %>
-</p>
+  <p>
+    <strong>Proficiencies four:</strong>
+    <%= @character.proficiencies_four %>
+  </p>
 
-<p>
-  <strong>Feat three:</strong>
-  <%= @character.feat_three %>
-</p>
+  <p>
+    <strong>Proficiencies five:</strong>
+    <%= @character.proficiencies_five %>
+  </p>
 
-<p>
-  <strong>Feat four:</strong>
-  <%= @character.feat_four %>
-</p>
+  <p>
+    <strong>Feat one:</strong>
+    <%= @character.feat_one %>
+  </p>
 
-<p>
-  <strong>Feat five:</strong>
-  <%= @character.feat_five %>
-</p>
+  <p>
+    <strong>Feat two:</strong>
+    <%= @character.feat_two %>
+  </p>
 
-<p>
-  <strong>Initiative:</strong>
-  <%= @character.initiative %>
-</p>
+  <p>
+    <strong>Feat three:</strong>
+    <%= @character.feat_three %>
+  </p>
 
-<p>
-  <strong>Speed:</strong>
-  <%= @character.speed %>
-</p>
+  <p>
+    <strong>Feat four:</strong>
+    <%= @character.feat_four %>
+  </p>
 
-<%= link_to 'Edit', edit_character_path(@character) %> |
-<%= link_to 'Back', characters_path %>
+  <p>
+    <strong>Feat five:</strong>
+    <%= @character.feat_five %>
+  </p>
+
+  <p>
+    <strong>Initiative:</strong>
+    <%= @character.initiative %>
+  </p>
+
+  <p>
+    <strong>Speed:</strong>
+    <%= @character.speed %>
+  </p>
+
+  <%= link_to 'Edit', edit_character_path(@character) %> |
+  <%= link_to 'Back', characters_path %>
+</div>
