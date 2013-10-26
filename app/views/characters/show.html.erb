@@ -1,6 +1,7 @@
 
 <p id="notice"><%= notice %></p>
 <div class = "content-box">
+  <center> <img src = "/ad&d-banner-dark.jpg"> </center>
   
   <div class = "name-box">
     <p class = "name-show-text">
@@ -16,7 +17,9 @@
       <strong>Hit points:</strong>
       <%= @character.hit_points %>
   </div>
-  
+
+
+
   <div class = "stat-box">
     <div class = "stat-holder">
       <img class = "stat-icon" src="/stats/str.png" />
@@ -67,7 +70,10 @@
     </div>
   </div>
 
-  
+  <div class = "level-box">
+    <strong>Level:</strong>
+    <%= @character.level %>
+  </div>
 
   <p>
     <strong>Armor class:</strong>
@@ -76,11 +82,7 @@
 
   
 
-  <p>
-    <strong>Level:</strong>
-    <%= @character.level %>
-  </p>
-
+ 
   <p>
     <strong>Proficiencies one:</strong>
     <%= @character.proficiencies_one %>

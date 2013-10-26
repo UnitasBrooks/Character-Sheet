@@ -35,7 +35,7 @@
   }
   
   .content-box {
-  	width: 1040px;
+  	width: 728px;
   	margin: 0 auto;
   	background-color: #808080;
   	/*opacity: 0.5;*/
@@ -44,7 +44,7 @@
   .name-box {
   	margin-top: 10px;
   	width: 350px;
-  	margin-left:10px;
+  	margin-left:10px; 
   	float: left;
   	text-align: left;
   	background-color: #FAEBD7;
@@ -109,11 +109,20 @@
 
   .hit-point-box {
     float:right;
-    margin-top:7px;
-    margin-right:745px;
+    margin-top:8px;
+    margin-right:435px;
     background-color:#FAEBD7;
     padding-right:5px;
     padding-left:2px;
+  }
+
+  .level-box {
+    float:left;
+    margin-left:298px;
+    margin-top:-300px;
+    background-color:#FAEBD7;
+    padding-left:2px;
+    padding-right:4px;
   }
 
 
