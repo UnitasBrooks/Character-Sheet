@@ -1,7 +1,7 @@
 
 <p id="notice"><%= notice %></p>
 <div class = "content-box">
-
+  
   <div class = "name-box">
     <p class = "name-show-text">
       <strong>Name:</strong>
@@ -12,10 +12,12 @@
   </br>
   </br>
 
+  <div class = "hit-point-box">
+      <strong>Hit points:</strong>
+      <%= @character.hit_points %>
+  </div>
+  
   <div class = "stat-box">
-    
-      
-    
     <div class = "stat-holder">
       <img class = "stat-icon" src="/stats/str.png" />
       <div class = "stat-show-text">
@@ -40,36 +42,32 @@
       </div>
     </div>
 
-  <div class = "stat-holder">
-      <img class = "stat-icon" src="/stats/wis.png" />
-      <div class = "stat-show-text">
-        <strong>Wisdom:</strong>
-        <%= @character.wisdom %>
-      </div>
+    <div class = "stat-holder">
+        <img class = "stat-icon" src="/stats/wis.png" />
+        <div class = "stat-show-text">
+          <strong>Wisdom:</strong>
+          <%= @character.wisdom %>
+        </div>
+    </div>
+
+    <div class = "stat-holder">
+        <img class = "stat-icon" src="/stats/int.png" />
+        <div class = "stat-show-text">
+          <strong>Intelligence:</strong>
+          <%= @character.intelligence %>
+        </div>
+    </div>
+
+    <div class = "stat-holder">
+        <img class = "stat-icon" src="/stats/cha.png" />
+        <div class = "stat-show-text">
+          <strong>Charisma:</strong>
+          <%= @character.charisma %>
+        </div>
+    </div>
   </div>
 
-  <div class = "stat-holder">
-      <img class = "stat-icon" src="/stats/int.png" />
-      <div class = "stat-show-text">
-        <strong>Intelligence:</strong>
-        <%= @character.intelligence %>
-      </div>
-  </div>
-
-  <div class = "stat-holder">
-      <img class = "stat-icon" src="/stats/cha.png" />
-      <div class = "stat-show-text">
-        <strong>Charisma:</strong>
-        <%= @character.charisma %>
-      </div>
-  </div>
-
-</div>
-
-  <p>
-    <strong>Hit points:</strong>
-    <%= @character.hit_points %>
-  </p>
+  
 
   <p>
     <strong>Armor class:</strong>
